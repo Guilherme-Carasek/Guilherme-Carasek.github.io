@@ -8,32 +8,40 @@
 </head>
 <body>
     <!--Nav bar (add  aria-current="page" to <a> e active to class)--> 
-    <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
+      <nav class="navbar bg-dark border-bottom border-body fixed-top" data-bs-theme="dark">
         <div class="container-fluid">
-          <a class="navbar-brand" aria-current="page" href="#">Happy Rock Boys</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
-          aria-expanded="false" aria-label="Toggle navigation">
+          <a class="navbar-brand" href="index.html">Happy Rock Boys</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" href="#">Sobre nós</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Fotos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contatos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Agenda</a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Procurar" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Rock with us!</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Sobre nós</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Fotos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contatos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Agenda</a>
+                </li>
+              </ul>
+              <form class="d-flex mt-3" role="search">
+                <input class="form-control me-2" type="search" placeholder="Procurar" aria-label="Search">
+                <button class="btn btn-outline-secondary" type="submit">Search</button>
+              </form>
+            </div>
           </div>
         </div>
       </nav>
